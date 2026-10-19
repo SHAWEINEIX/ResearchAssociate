@@ -1,28 +1,26 @@
 # 当前会话最小交接状态
 
-更新：2026-10-19（周一）· 首个真实课题待交付 · 平台 DSH
+更新：2026-10-20 · Palantir/FDE v1 验收不通过，反馈已记录
 
 ## 当前请求与完成状态
 
-- 伭奥要求深度研究 Palantir FDE 方法论、Echo/Delta 等概念与框架，并应用到房地产行业 AI 培训。
-- 课题 `topics/2026-10-19-palantir-fde-method/`（L2）已完成：brief、plan、evidence（28 条，A 级 9）、report-v1（8882 字）、HTML、red-team-v1。
-- 结论：FDE 是「编队 + 工序」，不是驻场外包；房地产 AI 培训以「一个可验收的交付单元」为教学单位，三轨八周、客户签字验收。置信度中。
-- 红队：独立定向复核三条意见（平台归因、分轨与 pairing 矛盾、数字不承载推理）已逐条处理；完整 A–E 清单自评，见 `red-team-v1.md`。
+- 伭奥已读完 `topics/2026-10-19-palantir-fde-method/report-v1.md`，明确评价研究成果非常不合格；本次只要求将反馈放在合适位置，伭奥会另行让 Agent 重做。
+- 完整反馈唯一入口：`topics/2026-10-19-palantir-fde-method/log.md` 的「2026-10-20 · 伭奥验收反馈」一节。下一位接手 Agent 必须先读。
+- 已同步课题 brief 状态、课题台账、研究判断指南与 journal；v1 Markdown、HTML、证据和红队记录均保留原样。
 
-## 当前入口
+## 验收失败要点
 
-- 工作区 `research/`，仓库 `research/repo`。
-- 开工：`.\research\start-research.ps1`；恢复：`python3 scripts/after_compact.py`。
+- Palantir/FDE 没讲清楚；房地产行业如何培训也没讲清楚；两条主线混杂，研究与阅读效率低。
+- 行文突然出现名词并默认读者已懂，阅读非常不方便。不能仅靠补译名或调整排版处理。
+- 此前脚本通过、红队记录与旧方案均为历史过程，不代表伭奥认可，不得沿用此前「直接出首期执行版」的下一步。
+
+## 下一步与权限边界
+
+- 状态：待重做，等待伭奥另行指示；本轮没有启动新研究、改写报告或生成课程方案。
+- 后续若获重做授权，应以本次反馈重新检查研究结构和读者理解，而不是只给旧报告局部润色。
+- 原有 brief 中 Q1–Q3 仍未回答；本次反馈不能视为对这些业务假设的确认。
+
+## 仓库入口
+
+- 仓库：`SHAWEINEIX/ResearchAssociate`；本轮工作副本：`/workspace/ResearchAssociate`。
 - 课题台账：`topics/index.md`；本课题：`topics/2026-10-19-palantir-fde-method/`。
-
-## 已验证
-
-- 15 项 unittest 通过；report-v1 通过 `check_report.py`（L2，28 条证据，A 9，8882 字）。
-- HTML 生成；桌面与 390px 手机宽度检查，目录折叠，表格不裂词。
-- 证据逐条可追到 `evidence.md`；C 级来源已在正文标注。
-
-## 未决与下一步
-
-- 把结论卡 + HTML 用文件卡片发给伭奥；等他答：FDE 班是否就是 Forward Deployed Engineer；首期企业班还是个人班；哪一家房企、哪一个场景。
-- 下一步：按他的选择出首期执行版（交付单元标准、沙盘剧本、评分表、招生页）。
-- 待观察：真实网页抓取的付费墙边界（已记 `docs/实测记录.md`）；首次真实交付后按 D-019 记试用期指标。
