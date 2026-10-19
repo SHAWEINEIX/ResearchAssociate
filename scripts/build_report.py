@@ -33,10 +33,11 @@ h1{font-size:30px;line-height:1.3;margin:10px 0;letter-spacing:-.01em}
 .card .label{color:var(--blue);font-weight:600;font-size:14px}
 .card .value{font-size:15px}
 .card .row:first-child .value{font-size:17px;font-weight:600}
-nav.toc{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0 0 30px;font-size:14px}
-nav.toc .toc-title{font-weight:600;color:var(--muted);font-size:12px;letter-spacing:.08em;margin-bottom:6px}
-nav.toc a{color:var(--ink);text-decoration:none;display:block;padding:3px 0;border:0}
-nav.toc a.lv3{padding-left:16px;color:var(--muted);font-size:13px}
+details.toc{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0 0 30px;font-size:14px}
+details.toc summary{cursor:pointer;font-weight:600;color:var(--muted);font-size:12px;letter-spacing:.08em;outline:none}
+details.toc .toc-body{padding-top:6px}
+details.toc a{color:var(--ink);text-decoration:none;display:block;padding:3px 0;border:0}
+details.toc a.lv3{padding-left:16px;color:var(--muted);font-size:13px}
 h2{font-size:22px;margin:38px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--blue-soft);line-height:1.4}
 h3{font-size:18px;margin:26px 0 10px;color:#2c3e50}
 p{margin:0 0 14px}
@@ -50,7 +51,7 @@ table{border-collapse:collapse;width:100%;min-width:460px;font-size:14px}
 th{background:var(--blue-soft);color:#26485f;text-align:left;font-weight:600;padding:8px 10px;
   border-bottom:1px solid var(--line);white-space:nowrap}
 td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-th,td{overflow-wrap:anywhere}
+th,td{overflow-wrap:break-word;word-break:normal}
 tr:last-child td{border-bottom:0}
 tbody tr:nth-child(even){background:#fafcfe}
 blockquote{margin:16px 0;padding:10px 16px;background:var(--orange-soft);
@@ -80,7 +81,7 @@ footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);color:v
   body{background:#fff}
   .page{max-width:none;padding:0}
   .card,nav.toc{box-shadow:none}
-  nav.toc{display:none}
+  details.toc{display:none}
   h2{page-break-after:avoid}
   table{min-width:0}
   tr,img{page-break-inside:avoid}
@@ -307,7 +308,8 @@ def build_html(md_path: Path, title_override: str | None = None) -> str:
     card = rc.infer_card(md_path)
     show_toc = bool(card) and card.get("key") in ("L2", "L3", "L4") and len(toc_items) > 3
     toc_html = (
-        '<nav class="toc"><div class="toc-title">本页内容</div>' + "".join(toc) + "</nav>"
+        '<details class="toc"><summary>本页内容</summary><div class="toc-body">'
+        + "".join(toc) + "</div></details>"
         if show_toc else ""
     )
 

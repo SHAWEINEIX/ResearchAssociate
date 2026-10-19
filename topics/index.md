@@ -5,6 +5,7 @@
 <!-- AUTO:TOPICS:BEGIN -->
 | 题号 | 题目 | 深度 | 状态 | 下一步 | 最后更新 | 入口 |
 |---|---|---|---|---|---|---|
+| 2026-10-19-palantir-fde-method | Palantir FDE 方法论与 Echo/Delta 框架：应用到房地产行业 AI 培训 | L2 | 待交付 | 待填 | 2026-10-19 | `topics/2026-10-19-palantir-fde-method/` |
 <!-- AUTO:TOPICS:END -->
 
 <!-- 状态取：待立项 / 研究中 / 待核 / 已交付 / 已归档 -->

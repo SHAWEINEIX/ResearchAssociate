@@ -53,7 +53,24 @@
 - 付费墙：能看摘要就标「仅摘要」；看不到正文不引具体数字。
 - 记录：机构 + 标题 + 发布日期 + 数据口径 + URL，缺一不可。
 
+## 2026-10 首次课题登记（Palantir FDE）
+
+| 来源 | 等级 | 用途 | 坑 |
+|---|---|---|---|
+| Palantir 官方博客 / 文档 / 招聘页 | A | 角色定义、Ontology、AIP、AI FDE、Evals、岗位职责 | 博客直抓 403，用 `r.jina.ai` 代理；文档页面侧栏很长，正文在后段；Lever 招聘页直抓只有标题 |
+| 国家统计局 | A | 房地产投资、销售、新开工 | 现价/不变价、初步核算/最终核实；增速按可比口径 |
+| YC Startup Library（Bob McGrew 访谈） | B | FDE 起源、Echo/Delta 画像、经济学 | 视频转录，非官方文档；口述有个人视角 |
+| Pragmatic Engineer（Gergely Orosz） | B | FDE 角色演变、OpenAI/Ramp 做法 | 付费墙，只公开前半；引用标明「部分正文」 |
+| StockAnalysis（PLTR） | B | 收入、员工、人均收入 | 二手聚合，最终以 SEC 年报为准；TTM 与财年口径不同 |
+| 华西证券 FDE 研报（网易转载） | B | 岗位增长 800%、中国券商视角 | 卖方观点；800% 转引 Indeed，未见原始报告 |
+| a16z / 36氪译文 | B | Palantir 化、服务陷阱、准入问题 | 风投立场；译文可能有删节 |
+| 腾讯云开发者社区（FDE 方法、Ontology 系列） | B/C | OpenAI FDE 方法、FDE 是「配镜师」 | 二手综合；观点性强，关键数字回溯原始访谈 |
+| FDE-Wiki（zhyese.github.io） | C | 编队、CDEF、能力模型、沙盘、知识转移 | 个人汇编；部分主张无一手出处，标 C，不当唯一依据 |
+| 53AI / Hayat Amin | C | Echo/Delta/FDPM、岗位结构快照 | 自媒体/单人统计；只作线索与交叉 |
+| 腾讯云 WorkBuddy、中培伟业课程页 | B | 国内 FDE 培训形态 | 机构营销页；价格与转化未公开 |
+
 ## 待补
 
 - 房地产 AI、具身智能、职业培训三个领域的固定信息源清单（遇到再补）。
 - 哪些付费库伭奥有账号（Wind、Choice 等），待确认。
+- Palantir 官方对 Echo/FDPM 的一手定义（目前只见招聘页与二手）。

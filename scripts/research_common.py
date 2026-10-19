@@ -392,7 +392,7 @@ def render_index_rows() -> str:
         rows = parse_evidence(read(topic / "evidence.md")) if (topic / "evidence.md").exists() else []
         counts = count_evidence(rows)
         old = existing.get(topic.name)
-        status = (old[3] if old and old[3] else brief.get("status") or "研究中")
+        status = brief.get("status") or (old[3] if old and old[3] else "研究中")
         next_step = old[4] if old and old[4] else "待填"
         depth = brief.get("depth") or (old[2] if old else "L1")
         updated = latest_mtime(topic) or date.today().isoformat()
