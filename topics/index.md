@@ -5,7 +5,7 @@
 <!-- AUTO:TOPICS:BEGIN -->
 | 题号 | 题目 | 深度 | 状态 | 下一步 | 最后更新 | 入口 |
 |---|---|---|---|---|---|---|
-| 2026-10-19-palantir-fde-method | Palantir FDE 方法论与 Echo/Delta 框架：应用到房地产行业 AI 培训 | L2 | 待重做（验收不通过） | 先读课题 log 的 2026-10-20 反馈；等待伭奥另行指示，不启动重做 | 2026-10-20 | `topics/2026-10-19-palantir-fde-method/` |
+| 2026-10-19-palantir-fde-method | Palantir FDE 方法论与 Echo/Delta 框架：应用到房地产行业 AI 培训 | L2 | 待重做（验收不通过） | 先读 `rework-plan.md`；待伭奥定读者起点/交付形态/贯穿场景，先写第一篇 | 2026-10-20 | `topics/2026-10-19-palantir-fde-method/` |
 <!-- AUTO:TOPICS:END -->
 
 <!-- 状态取：待立项 / 研究中 / 待核 / 已交付 / 已归档 -->
@@ -21,3 +21,4 @@
 ## 暂不立项
 
 - 待伭奥提出的方向先记在这里，不主动开工。
+
